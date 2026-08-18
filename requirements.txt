@@ -1,0 +1,9 @@
+tensorflow>=2.12.0
+qkeras>=0.9.0
+hls4ml>=0.8.0
+numpy
+pandas
+matplotlib
+scikit-learn
+h5py
+jupyterlab

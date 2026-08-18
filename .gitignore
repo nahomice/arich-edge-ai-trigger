@@ -1,0 +1,10 @@
+*.log
+*.jou
+*.str
+.Xil/
+*.runs/
+*.sim/
+*.ip_user_files/
+__pycache__/
+.ipynb_checkpoints/
+*.backup.*

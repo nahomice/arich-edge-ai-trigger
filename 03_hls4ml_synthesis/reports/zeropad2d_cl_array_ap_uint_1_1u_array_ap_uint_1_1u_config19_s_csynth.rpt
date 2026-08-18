@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'zeropad2d_cl_array_ap_uint_1_1u_array_ap_uint_1_1u_config19_s'
+================================================================
+* Date:           Mon Aug  3 11:07:11 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexu
+* Target device:  xcvu080-ffvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.825 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1001|     1001|  5.005 us|  5.005 us|  1001|  1001|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                                  |                                                                        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                     Instance                                     |                                 Module                                 |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadTopWidth_fu_28     |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadTopWidth     |       40|       40|  0.200 us|  0.200 us|   40|   40|       no|
+        |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadMain_fu_34         |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadMain         |      914|      914|  4.570 us|  4.570 us|  914|  914|       no|
+        |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadBottomWidth_fu_42  |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadBottomWidth  |       40|       40|  0.200 us|  0.200 us|   40|   40|       no|
+        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|       2|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|      70|     667|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|     110|    -|
+|Register         |        -|    -|      13|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      83|     779|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     2842|  672|  891424|  445712|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |                                     Instance                                     |                                 Module                                 | BRAM_18K| DSP| FF | LUT | URAM|
+    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadBottomWidth_fu_42  |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadBottomWidth  |        0|   0|   9|   75|    0|
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadMain_fu_34         |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadMain         |        0|   0|  52|  517|    0|
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadTopWidth_fu_28     |zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadTopWidth     |        0|   0|   9|   75|    0|
+    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                                             |                                                                        |        0|   0|  70|  667|    0|
+    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                        |  49|          9|    1|          9|
+    |ap_done                          |   9|          2|    1|          2|
+    |input_layer_TREADY_int_regslice  |   9|          2|    1|          2|
+    |layer19_out_din                  |  14|          3|    1|          3|
+    |layer19_out_write                |  20|          4|    1|          4|
+    |real_start                       |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            | 110|         22|    6|         22|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                              Name                                             | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                                      |  8|   0|    8|          0|
+    |ap_done_reg                                                                                    |  1|   0|    1|          0|
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadBottomWidth_fu_42_ap_start_reg  |  1|   0|    1|          0|
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadMain_fu_34_ap_start_reg         |  1|   0|    1|          0|
+    |grp_zeropad2d_cl_array_array_ap_uint_1_1u_config19_Pipeline_PadTopWidth_fu_28_ap_start_reg     |  1|   0|    1|          0|
+    |start_once_reg                                                                                 |  1|   0|    1|          0|
+    +-----------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                                          | 13|   0|   13|          0|
+    +-----------------------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+----------------------------------------------------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |                             Source Object                            |    C Type    |
++----------------------------+-----+-----+------------+----------------------------------------------------------------------+--------------+
+|ap_clk                      |   in|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_rst                      |   in|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_start                    |   in|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|start_full_n                |   in|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_done                     |  out|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_continue                 |   in|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_idle                     |  out|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|ap_ready                    |  out|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|start_out                   |  out|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|start_write                 |  out|    1|  ap_ctrl_hs|  zeropad2d_cl<array<ap_uint<1>, 1u>, array<ap_uint<1>, 1u>, config19>|  return value|
+|input_layer_TDATA           |   in|    8|        axis|                                                           input_layer|       pointer|
+|input_layer_TVALID          |   in|    1|        axis|                                                           input_layer|       pointer|
+|input_layer_TREADY          |  out|    1|        axis|                                                           input_layer|       pointer|
+|layer19_out_din             |  out|    1|     ap_fifo|                                                           layer19_out|       pointer|
+|layer19_out_num_data_valid  |   in|   11|     ap_fifo|                                                           layer19_out|       pointer|
+|layer19_out_fifo_cap        |   in|   11|     ap_fifo|                                                           layer19_out|       pointer|
+|layer19_out_full_n          |   in|    1|     ap_fifo|                                                           layer19_out|       pointer|
+|layer19_out_write           |  out|    1|     ap_fifo|                                                           layer19_out|       pointer|
++----------------------------+-----+-----+------------+----------------------------------------------------------------------+--------------+
+

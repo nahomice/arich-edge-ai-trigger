@@ -1,0 +1,289 @@
+
+
+================================================================
+== Vitis HLS Report for 'shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s'
+================================================================
+* Date:           Mon Aug  3 11:07:12 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexu
+* Target device:  xcvu080-ffvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  0.849 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       -|       -|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|     768|     384|    -|
+|Multiplexer      |        -|    -|       -|     216|    -|
+|Register         |        -|    -|       1|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     769|     600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |     2842|  672|  891424|  445712|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |                                         Memory                                         |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_9_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_8_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_7_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_6_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_5_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_4_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_3_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_2_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_1_U                   |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |void_pooling2d_cl_stream_stream_array_ap_ufixed_12u_0_line_buffer_U                     |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |p_ZZN4nnet12pooling2d_clINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9ap_o_mode0E_15_U  |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    |p_ZZN4nnet12pooling2d_clINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9ap_o_mode0E_14_U  |shift_line_buffer_array_ap_ufixed_16_6_4_0_0_12u_config6_s_void_pooling2d_cl_dEe  |        0|  64|  32|    0|    36|   16|     1|          576|
+    +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                                                                                   |                                                                                  |        0| 768| 384|    0|   432|  192|    12|         6912|
+    +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                           Name                                          | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136_o  |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96_o   |   9|          2|   16|         32|
+    |p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97_o   |   9|          2|   16|         32|
+    +-----------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                                    | 216|         48|  384|        768|
+    +-----------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------+--------------+
+|                                            RTL Ports                                           | Dir | Bits|  Protocol  |                                     Source Object                                     |    C Type    |
++------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                          |   in|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_rst                                                                                          |   in|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_start                                                                                        |   in|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_done                                                                                         |  out|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_idle                                                                                         |  out|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_ready                                                                                        |  out|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|ap_ce                                                                                           |   in|    1|  ap_ctrl_hs|                      shift_line_buffer<array<ap_ufixed<16, 6, 4, 0, 0>, 12u>, config6>|  return value|
+|p_read                                                                                          |   in|   16|     ap_none|                                                                                 p_read|        scalar|
+|p_read1                                                                                         |   in|   16|     ap_none|                                                                                p_read1|        scalar|
+|p_read2                                                                                         |   in|   16|     ap_none|                                                                                p_read2|        scalar|
+|p_read3                                                                                         |   in|   16|     ap_none|                                                                                p_read3|        scalar|
+|p_read4                                                                                         |   in|   16|     ap_none|                                                                                p_read4|        scalar|
+|p_read5                                                                                         |   in|   16|     ap_none|                                                                                p_read5|        scalar|
+|p_read6                                                                                         |   in|   16|     ap_none|                                                                                p_read6|        scalar|
+|p_read7                                                                                         |   in|   16|     ap_none|                                                                                p_read7|        scalar|
+|p_read8                                                                                         |   in|   16|     ap_none|                                                                                p_read8|        scalar|
+|p_read9                                                                                         |   in|   16|     ap_none|                                                                                p_read9|        scalar|
+|p_read10                                                                                        |   in|   16|     ap_none|                                                                               p_read10|        scalar|
+|p_read11                                                                                        |   in|   16|     ap_none|                                                                               p_read11|        scalar|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_125|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_19                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_19|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_19_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_19|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_126|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_18                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_18|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_18_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_18|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_127|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_17                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_17|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_17_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_17|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_128|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_16                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_16|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_16_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_16|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_129|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_15                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_15|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_15_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_15|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_130|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_14                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_14|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_14_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_14|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_131|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_13                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_13|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_13_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_13|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_132|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_12                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_12|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_12_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_12|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_133|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_11                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_11|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_11_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_11|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_134|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_10                    |  out|   16|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_10|       pointer|
+|void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_10_ap_vld             |  out|    1|      ap_vld|           void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_10|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_135|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_123           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_123|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_123_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_123|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136_i         |   in|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136_o         |  out|   16|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136_o_ap_vld  |  out|    1|     ap_ovld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_136|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_124           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_124|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_124_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_124|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_97|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_137           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_137|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_137_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_137|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_96|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_138           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_138|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_138_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_138|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_95|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_139           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_139|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_139_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_139|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_94|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_140           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_140|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_140_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_140|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_93|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_141           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_141|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_141_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_141|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_92|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_142           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_142|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_142_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_142|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_91|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_143           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_143|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_143_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_143|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_90|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_144           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_144|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_144_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_144|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_89|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_145           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_145|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_145_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_145|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_88|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_146           |  out|   16|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_146|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_146_ap_vld    |  out|    1|      ap_vld|  p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_146|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_87|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_99            |  out|   16|      ap_vld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_99|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_99_ap_vld     |  out|    1|      ap_vld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_99|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86_i          |   in|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86_o          |  out|   16|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86_o_ap_vld   |  out|    1|     ap_ovld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_86|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_98            |  out|   16|      ap_vld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_98|       pointer|
+|p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_98_ap_vld     |  out|    1|      ap_vld|   p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi16ELi6EL9ap_q_mode4EL9a_98|       pointer|
++------------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------------+--------------+
+

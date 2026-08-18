@@ -1,0 +1,259 @@
+<profile>
+
+<ReportVersion>
+<Version>2023.2</Version>
+</ReportVersion>
+
+<UserAssignments>
+<unit>ns</unit>
+<ProductFamily>virtexu</ProductFamily>
+<Part>xcvu080-ffvb2104-2-e</Part>
+<TopModelName>zeropad2d_cl_array_ap_uint_1_1u_array_ap_uint_1_1u_config19_s</TopModelName>
+<TargetClockPeriod>5.00</TargetClockPeriod>
+<ClockUncertainty>1.35</ClockUncertainty>
+<FlowTarget>vivado</FlowTarget>
+</UserAssignments>
+
+<PerformanceEstimates>
+<PipelineType>no</PipelineType>
+<SummaryOfTimingAnalysis>
+<unit>ns</unit>
+<EstimatedClockPeriod>2.825</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<unit>clock cycles</unit>
+<Best-caseLatency>1001</Best-caseLatency>
+<Average-caseLatency>1001</Average-caseLatency>
+<Worst-caseLatency>1001</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.005 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.005 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.005 us</Worst-caseRealTimeLatency>
+<Interval-min>1001</Interval-min>
+<Interval-max>1001</Interval-max>
+</SummaryOfOverallLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>firmware/nnet_utils/nnet_padding_stream.h:81</SourceLocation>
+</SummaryOfViolations>
+</PerformanceEstimates>
+
+<AreaEstimates>
+<Resources>
+<FF>83</FF>
+<LUT>779</LUT>
+<BRAM_18K>0</BRAM_18K>
+<DSP>0</DSP>
+<URAM>0</URAM>
+</Resources>
+<AvailableResources>
+<BRAM_18K>2842</BRAM_18K>
+<DSP>672</DSP>
+<FF>891424</FF>
+<LUT>445712</LUT>
+<URAM>0</URAM>
+</AvailableResources>
+</AreaEstimates>
+
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>start_full_n</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_continue</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>start_out</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>start_write</name>
+<Object>zeropad2d_cl&lt;array&lt;ap_uint&lt;1&gt;, 1u&gt;, array&lt;ap_uint&lt;1&gt;, 1u&gt;, config19&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_layer_TDATA</name>
+<Object>input_layer</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_layer_TVALID</name>
+<Object>input_layer</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_layer_TREADY</name>
+<Object>input_layer</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer19_out_din</name>
+<Object>layer19_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer19_out_num_data_valid</name>
+<Object>layer19_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>11</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer19_out_fifo_cap</name>
+<Object>layer19_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>11</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer19_out_full_n</name>
+<Object>layer19_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer19_out_write</name>
+<Object>layer19_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+
+</profile>
